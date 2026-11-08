@@ -1,3 +1,5 @@
 
 
-conda env create -f cellcount.yml
+conda env create -f environment.yml
+or
+pip install -r requirements.txt
