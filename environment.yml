@@ -1,0 +1,23 @@
+# Environment for YOLOv11_Predict&ExtractMask_Verification.ipynb
+# Create:  conda env create -f environment.yml
+# Use:     conda activate euglena-verify
+# GPU build of PyTorch (CUDA 12.1) on Windows/Linux; CPU build is used automatically on macOS.
+name: euglena-verify
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu121
+      - torch==2.5.1
+      - torchvision==0.20.1
+      - ultralytics==8.4.14
+      - numpy==1.26.4
+      - pandas==2.2.3
+      - scipy==1.13.1
+      - scikit-image==0.24.0
+      - opencv-python==4.10.0.84
+      - matplotlib==3.9.2
+      - pillow==12.0.0
+      - ipykernel==6.29.5
